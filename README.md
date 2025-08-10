@@ -21,6 +21,7 @@ Dataset gồm **10 cột** với thông tin chi tiết như sau:
 ## Mô tả dự án
 Dự án sử dụng mô hình **RandomForestRegressor** để dự đoán giá nhà tại California dựa trên các thông tin đặc trưng như vị trí địa lý, số phòng, thu nhập trung vị và khoảng cách tới biển.
 Dự án được triển khai bằng **Streamlit** để deploy giao diện web
+
 ---
 
 ## Kết quả mô hình
@@ -28,8 +29,10 @@ Dự án được triển khai bằng **Streamlit** để deploy giao diện web
 - **RMSE**: `50,530.70`
 - **MAE**: `32,471.42`
 - **R² Score**: `0.81`
+  
 ---
 
 ## Chạy file requirment
 pip install -r requirements.txt
+
 
