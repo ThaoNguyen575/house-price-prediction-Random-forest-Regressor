@@ -1,6 +1,6 @@
 # Dự đoán giá nhà ở California
 
-## Dataset
+## 1. Dataset
 Dataset gồm **10 cột** với thông tin chi tiết như sau:
 
 | #  | Column              | Non-Null Count | Dtype   | Mô tả |
@@ -18,13 +18,19 @@ Dataset gồm **10 cột** với thông tin chi tiết như sau:
 
 ---
 
-## Mô tả dự án
-Dự án sử dụng mô hình **RandomForestRegressor** để dự đoán giá nhà tại California dựa trên các thông tin đặc trưng như vị trí địa lý, số phòng, thu nhập trung vị và khoảng cách tới biển.
-Dự án được triển khai bằng **Streamlit** để deploy giao diện web
+## 2. Mô hình
+- Mô hình dự đoán giá nhà sử dụng Random Forest Regressor.
+- Dữ liệu được xử lý thiếu và mã hóa biến phân loại ocean_proximity.
+- Dữ liệu được chia thành tập huấn luyện và kiểm tra theo tỷ lệ 80-20.
+- Mô hình được huấn luyện với 100 cây quyết định và các tham số điều chỉnh.
+- Kết quả đánh giá cho thấy R² đạt khoảng 0.81 trên tập kiểm tra.
+- Các chỉ số lỗi như MSE, RMSE, MAE đều ở mức chấp nhận được.
+- Mô hình có độ chính xác tốt trên cả tập huấn luyện và kiểm tra.
+- Dự án được triển khai bằng **Streamlit** để deploy giao diện web
 
 ---
 
-## Kết quả mô hình
+## 3. Kết quả mô hình
 - **MSE**: `2,553,351,574.61`
 - **RMSE**: `50,530.70`
 - **MAE**: `32,471.42`
@@ -34,5 +40,6 @@ Dự án được triển khai bằng **Streamlit** để deploy giao diện web
 
 ## Chạy file requirment
 pip install -r requirements.txt
+
 
 
